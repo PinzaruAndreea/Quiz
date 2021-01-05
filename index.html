@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class= "title-box">
+        <div>
+            <div class="title">
+                <h2 class="title-text">Quiz</h2>
+            </div>
+        </div>
+
+        <div class= "result_container">
+            <div class= "ninja-icon">
+                <img src= "img.png" alt= "ninja icon">
+            </div>
+                <p> You are <span class="score"> 0%</span> ninjas</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="quiz_container">
+            <h2 class="quiz_header">On with the questions...</h2>
+
+            <form class="quiz-form questions">
+                <div class="answer_container">
+                    <p class="question">1.How do give a ninja directions?</p>
+                    <div class="answer">
+                        <input type="radio" name="q1" value= "A" checked>
+                        <label class="check-box">Show them a map</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q1" value= "B" >
+                        <label class="check-box">Don't worry, a ninja will find you.</label>
+                    </div>
+                </div>
+                <div class="answer_container">
+                    <p class="question">2.If a ninja has 3 apples, then gives one to Martio & one to Yoshi, how many apples does the ninja have left?</p>
+                    <div class="answer">
+                        <input type="radio" name="q2" value= "A" checked>
+                        <label class="check-box">1 apple</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q2" value= "B" >
+                        <label class="check-box">3 apples and two corpses</label>
+                    </div>
+                </div>
+                <div class="answer_container">
+                    <p class="question">3.How do you know when you've met a ninja?</p>
+                    <div class="answer">
+                        <input type="radio" name="q3" value= "A" checked>
+                        <label class="check-box">You'll recognize the outfit</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q3" value= "B" >
+                        <label class="check-box">The grim reaper will tell you.</label>
+                    </div>
+                </div>
+                <div class="answer_container">
+                    <p class="question">4. What is a ninja's favourite array method?</p>
+                    <div class="answer">
+                        <input type="radio" name="q4" value= "A" checked>
+                        <label class="check-box">forEach()</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q4" value= "B" >
+                        <label class="check-box">Slice()</label>
+                    </div>
+                </div>
+                <div class="submit-container">
+                    <input type="submit" class="submit-button">
+                    <div class = "retry">
+                        <span> Retry</span>
+                        <span class ="retry-img">
+                            <img src = "refresh.png">
+                        </span>
+                    </div>
+                </div>
+            </form>  
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
