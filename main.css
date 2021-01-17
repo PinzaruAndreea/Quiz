@@ -1,25 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
 
-.title-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .title{
     padding: 1.5rem 2rem 0 2rem;
     color:#0E74E4;
+    text-align: center;
 }
-
 
 .title-text{
     font: 4rem 'Montserrat', sans-serif;
-}
-
-.ninja-icon img{
-    height: 2.5rem;
-    display:none;
-    animation: shuriken-move 5s 1  normal linear 100ms;
 }
 
 .main {
@@ -71,76 +59,32 @@
     color: #0E74E4;
 }
 
-.retry {
-    display: none;
-    padding: 0.7rem 0.7rem;
-    border-radius: 50px;
-    font: bold 1rem "Montserrat", sans-serif;
-    color: #0E74E4;
-    background-color: #07213d;
-    margin-left: 0.2rem;
-    cursor: pointer;
-}
-
-.retry-img img{
-    display: none;
-    height: 0.9rem;
-}
-
 .result_container {
     display: none;
     font: 3rem "Montserrat", sans-serif;
     color: #0E74E4;
+    text-align: center; 
 }
 
-
-@keyframes shuriken-move{
-    0%{
-        transform: translate(25rem, 0);
-    }
-
-    25%{
-        transform: translate(20rem, 0);
-    }
-
-    50% {
-        transform: translate(10rem, 0);
-    }
-
-    75% {
-        transform: translate(0, 0);
-    }
+div img{
+    height: 2rem;
+    cursor: pointer;
 }
 
-@media(max-width:40rem) {
-    .title{
-        padding: 2rem 0 0 1rem;
-        color:#0E74E4;
-        text-align: left;
+@media(max-width: 40rem) {
+    .title {
+        padding: 0.5rem 0 0 0;
     }
 
-    .ninja-icon img{
-        display: none    
+    .result_container { 
+        font: 2.5rem "Montserrat", sans-serif;
     }
 
     .main {
-        background: #0E74E4;
-        padding: 1rem 0 0 0.8rem;
+        padding:0;
     }
 
-    .quiz_container {
-        padding: 0;
+    .quiz_container{
+        padding-left: 1.5rem;
     }
-
-    .quiz_header{
-        color: white;
-        margin:0;
-        padding: 0;
-        font: 2.5rem "Montserrat",sans-serif;
-    }
-    .result_container {
-        font: 2rem "Montserrat", sans-serif;
-        color: #0E74E4;
-    }
-
 }
