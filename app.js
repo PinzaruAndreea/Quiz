@@ -2,9 +2,8 @@ const correctAnswers = ["B", "B", "B", "B"];
 const form= document.querySelector(".quiz-form");
 const results= document.querySelector(".result_container");
 let scores= document.querySelector(".score");
-const icon = document.querySelector(".ninja-icon img")
-const retry = document.querySelector(".retry");
-const retry_img = document.querySelector(".retry-img img");
+const retry = document.querySelector(".retry img");
+
 
 
 form.addEventListener("submit", e=> {
@@ -21,8 +20,6 @@ form.addEventListener("submit", e=> {
     scrollTo(0,0);
     results.style.display = "block";
 
-    icon.style.display = "block";
-
     let output = 0;
     const timer= setInterval(() => {
         scores.innerText = output + "%";
@@ -33,14 +30,14 @@ form.addEventListener("submit", e=> {
         }
     }, 10);
 
-    retry.style.display= "inline";
-    retry_img.style.display= "inline"
+    retry.style.display= "block";
 });
 
-retry.addEventListener("click", e =>{
+retry.addEventListener("click", ()=> {
+    scrollTo(0,0);
     location.reload();
-    window.scrollTo(0, 300);
 })
+
 
 
 
