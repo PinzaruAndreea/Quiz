@@ -78,6 +78,49 @@ div img{
     height: 2rem;
     cursor: pointer;
 }
+.button-container{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.2);
+    background-color: #1e90ff;
+    color: aliceblue;
+    cursor: pointer;
+    user-select: none;
+    transition: box-shadow 0.15s, background-color 0.05s;
+}
+
+.button:hover {
+    background-color: #1e90ff;
+    filter: brightness(90%);
+}
+
+.button:focus {
+    box-shadow: 0 3px 7px rgba(0,0,0, 0.3);
+    background-color: #1e90ff;
+    filter: brightness(80%);
+    transition: box-shadow 0.1s cubic-bezier(0.47, 1.62, 0.55, 1.08), background-color 0.1s;
+}
+
+.button:active {
+    box-shadow: 0 1px 3px rgba(0,0,0, 0.5);
+    background-color: #1e90ff;
+    filter: brightness(70%);
+    transition: box-shadow 0.1s  cubic-bezier(0.47, 1.62, 0.55, 1.08), background-color 0.05s;
+}
+
+.retry{
+    margin-left: 0.5rem;
+}
 
 @media(max-width: 40rem) {
     .title {
@@ -96,3 +139,6 @@ div img{
         padding-left: 1.5rem;
     }
 }
+
+
+
