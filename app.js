@@ -1,13 +1,13 @@
 const correctAnswers = ["B", "B", "B", "B"];
 const form= document.querySelector(".quiz-form");
+const submit = document.querySelector(".button")
 const results= document.querySelector(".result_container");
 let scores= document.querySelector(".score");
 const retry = document.querySelector(".retry img");
 
 
 
-form.addEventListener("submit", e=> {
-    e.preventDefault();
+submit.addEventListener("click", e=> {
 
     let score = 0;
     const userAnswers =[form.q1.value, form.q2.value, form.q3.value, form.q4.value];
